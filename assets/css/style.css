@@ -12,6 +12,7 @@ body
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* HEADER AND NAV BAR STYLES */
 header
 {
     padding: 20px 35px;
@@ -56,14 +57,15 @@ header nav ul li a
     font-size: 1.55vw;
 }
 
+/* FOOTER STYLES */
 footer
 {
     background: #fce138;
-    width: 100%;
     padding: 40px 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
 }
 
 footer h2
@@ -89,6 +91,7 @@ section
     padding: 60px;
 }
 
+/* HERO STYLES */
 .hero
 {
     background-image: url("../images/hero-bg.jpg");
@@ -159,30 +162,15 @@ section
     color: #fce138;
     border: none;
     padding: 10px 20px;
-    font-size: 16 px;
+    font-size: 16px;
 }
 
-.intro p
-{
-    line-height: 1.7;
-    color: #39a6b2;
-    width: 80%;
-    font-size: 20px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.steps
-{
-    background: #fce138;
-}
-
+/* SECTION TITLE STYLES */
 .section-title
 {
     font-size: 55px;
-    color: #024e76;
-    display: flex;
     border-bottom: 3px solid;
+    color: #024e76;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -197,6 +185,23 @@ section
 .secondary-border
 {
     border-color: #39a6b2;
+}
+
+/* WHAT WE DO STYLES */
+.intro p
+{
+    line-height: 1.7;
+    color: #39a6b2;
+    width: 80%;
+    font-size: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* WHAT YOU DO STYLES */
+.steps
+{
+    background: #fce138;
 }
 
 .step
@@ -218,6 +223,25 @@ section
     flex: 1 30%;
 }
 
+.step-info
+{
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.step-img
+{
+    flex: 1 12%;
+    margin-right: 20px;
+}
+
+.step-img img
+{
+    max-width: 100%;
+}
+
 .step-text
 {
     flex: 12;
@@ -236,21 +260,7 @@ section
     font-size: 18px;
 }
 
-.step-info
-{
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.step-img
-{
-    flex: 1 12%;
-    margin-right: 20px;
-    max-width: 100%;
-}
-
+/* TRAINERS STYLES */
 .trainers
 {
     width: 100%;
@@ -296,6 +306,7 @@ section
     font-size: 17px;
 }
 
+/* REACH OUT STYLES */
 .contact
 {
     background-color: #024e76;
@@ -311,6 +322,12 @@ section
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.contact-info > *
+{
+    flex: 1;
+    margin: 15px;
 }
 
 .contact-info iframe
@@ -365,7 +382,7 @@ section
     font-size: 16px;
 }
 
-/*Utility Classes*/
+/* Utility Classes */
 .text-left
 {
     text-align: left;
